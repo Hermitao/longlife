@@ -1,0 +1,12 @@
+{
+    "ingredientPattern": "QBQ,BWB,_S_",
+    "ingredients": {
+      "S": { "type": "item", "code": "walkingstick:walkingstick-fine" },
+      "W": { "type": "item", "code": "game:wrench-*", "name": "metal", "allowedVariants": ["blackbronze"], "quantity": 1 },
+      "B": { "type": "item", "code": "game:metalnailsandstrips-*", "name": "metal", "allowedVariants": ["blackbronze"], "quantity": 1 },
+      "Q": { "type": "item", "code": "game:clearquartz", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "item", "code": "walkingstick-architect", "quantity": 1 }
+  }

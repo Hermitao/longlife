@@ -1,0 +1,186 @@
+[
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-copper", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "copper", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-brass", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "brass", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-blackbronze", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "blackbronze", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-bismuth", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "bismuth", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-tinbronze", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "tinbronze", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-bismuthbronze", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "bismuthbronze", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-iron", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "iron", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-molybdochalkos", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "molybdochalkos", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-iron", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "iron", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-silver", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "silver", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-gold", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "gold", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-steel", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "steel", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-meteoriciron", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "meteoriciron", "lining": "plain", "glass": "quartz"   }
+  }
+},
+
+{
+  "ingredientPattern": "G",
+  "ingredients": {
+    "G": { "type": "item", "code": "walkingstick-lantern-electrum", "returnedStack": { "type": "item", "code": "walkingstick" } }
+  },
+  "showInCreatedBy": false,
+  "width": 1,
+  "height": 1,
+  "output": { 
+    "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "electrum", "lining": "plain", "glass": "quartz"   }
+  }
+}
+
+
+]

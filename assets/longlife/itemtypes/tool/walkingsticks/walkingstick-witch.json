@@ -1,0 +1,154 @@
+{
+  "code": "walkingstick-witch",
+  "class": "ItemWalkingStickWitch",
+  "storageFlags": "257",
+  "maxstacksize": 1,
+  "shape": { "base": "tool/walkingsticks/walkingstick-witch" },
+  "tool": "pickaxe",
+  "lightAbsorption": 0,
+  "lightHsv": [7, 7, 10],
+  
+  
+
+  "textures": {
+    "wood": { "base": "block/wood/oak" },
+    "cloth": { "base": "material/plain" },
+    "rope": { "base": "rope" }
+  },
+
+  "creativeinventory": {
+    "general": ["*"],
+    "items": ["*"],
+    "tools": ["*"]
+  },
+
+  "behaviors": [{ 
+    "name": "GroundStorable",
+    "properties": {
+      "layout": "WallHalves",
+      "wallOffY": 2,
+      "ctrlKey": true,
+      "selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+      "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
+      
+    }
+  }, { "name": "AnimationAuthoritative", "properties": { "onlyOnEntity": true } }],
+
+  
+
+  "attributes": {
+
+    "particleProperties": [
+  {
+    "hsvaColor": [
+      { "avg": 20, "var": 20 },
+      { "avg": 255, "var": 50 },
+      { "avg": 255, "var": 50 },
+      { "avg": 255, "var": 0 }
+    ],
+    "gravityEffect": { "avg": 0, "var": 0 },
+    "posOffset": [
+      { "avg": 0, "var": 0.1 },
+      { "avg": 0, "var": 0 },
+      { "avg": 0, "var": 0.1 }
+    ],
+    "velocity": [
+      { "avg": 0, "var": 0.025 },
+      { "avg": 0.1, "var": 0.1 },
+      { "avg": 0, "var": 0.025 }
+    ],
+    "quantity": { "avg": 0.015 },
+    "size": { "avg": 0.5, "var": 0 },
+    "sizeEvolve": { "transform": "quadratic", "factor": -0.7 },
+    "lifeLength": { "avg": 1.5 },
+    "vertexFlags": 128
+  },
+  {
+    "hsvaColor": [
+      { "avg": 0, "var": 0 },
+      { "avg": 0, "var": 0 },
+      { "avg": 40, "var": 30 },
+      { "avg": 220, "var": 50 }
+    ],
+    "opacityEvolve": { "transform": "quadratic", "factor": -16 },
+    "gravityEffect": { "avg": 0, "var": 0 },
+    "posOffset": [
+      { "avg": 0, "var": 0.1 },
+      { "avg": 0, "var": 0 },
+      { "avg": 0, "var": 0.1 }
+    ],
+    "velocity": [
+      { "avg": 0, "var": 0.025 },
+      { "avg": 0.05, "var": 0.1 },
+      { "avg": 0, "var": 0.025 }
+    ],
+    "quantity": { "avg": 0.05 },
+    "size": { "avg": 0.3125, "var": 0.05 },
+    "sizeEvolve": { "transform": "linear", "factor": 0.5 },
+    "particleModel": "Quad"
+  }
+],
+    
+    "toolrackTransform": {
+      "rotation": { "y": 1, "z": -1 },
+      "translation": { "x": -0.1, "y": 0.696 },
+      "scale": 1.25
+    },
+    "groundStorageTransformByType": {
+      "@walkingstick": {
+        "translation": { "x": 0, "y": 1, "z": -0.1 },
+        "rotation": { "x": 13, "y": -92, "z": 87 },
+        "scale": 0.88
+      },
+      "*": {
+        "translation": { "x": 0, "y": 1, "z": -0.1 },
+        "rotation": { "x": 13, "y": -92, "z": 87 },
+        "scale": 0.88
+      }
+     
+    },
+    "handbook": {
+      "groupBy": ["walkingstick-*"]
+    }
+  },
+
+  "materialDensity": 450,
+  "attackRange": 2.5,
+  
+
+  "guiTransform": {
+    "translation": { "x": -2, "y": 14, "z": 0 },
+    "rotation": { "x": -90, "y": 45, "z": 35 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+    "scale": 2
+  },
+
+  "fpHandTransform": {
+    "translation": { "x": -0.35, "y": -0.45, "z": 0.55 },
+    "rotation": { "x": -20, "y": 0, "z": 75 },
+    "origin": { "x": 0.2, "y": 0.5, "z": 0.5 },
+    "scale": 2.5
+  },
+
+  "tpHandTransform": {
+    "translation": { "x": -0.9, "y": -0.50, "z": -0.13 },
+    "rotation": { "x": 85, "y": 0, "z": 0 },
+    "scale": 0.8
+  },
+
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0.5, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+    "scale": 3.8
+  },
+  
+  "heldTpHitAnimation": "axehit",
+  "heldRightTpIdleAnimation": "holding-walking-stick-right-arm",
+  "heldLeftTpIdleAnimation": "holding-walking-stick-left-arm",
+
+  "sounds": {
+    "walk": "game/player/footstep/grass1",
+    "run": "game/player/footstep/grass2"
+  }
+}

@@ -1,0 +1,129 @@
+{
+
+  "item-walkingstick": "Walking stick",
+  "item-walkingstick-fine": "Fine walking stick",
+  "item-walkingstick-crude": "Crude walking stick",
+  "item-walkingstick-cowskull": "Walking stick with cow skull",
+  "item-walkingstick-reinforced": "Reinforced walking stick",
+  
+
+  "item-walkingstick-survivalist-copper": "Survivalist walking stick with copper knife",
+  "item-walkingstick-survivalist-blackbronze": "Survivalist walking stick with black bronze knife",
+  "item-walkingstick-survivalist-bismuth": "Survivalist walking stick with bismuth knife",
+  "item-walkingstick-survivalist-tinbronze": "Survivalist walking stick with tin bronze knife",
+  "item-walkingstick-survivalist-bismuthbronze": "Survivalist walking stick with bismuth bronze knife",
+  "item-walkingstick-survivalist-iron": "Survivalist walking stick with iron knife",
+  "item-walkingstick-survivalist-silver": "Survivalist walking stick with silver knife",
+  "item-walkingstick-survivalist-gold": "Survivalist walking stick with gold knife",
+  "item-walkingstick-survivalist-steel": "Survivalist walking stick with steel knife",
+  "item-walkingstick-survivalist-meteoriciron": "Survivalist walking stick with meteoric iron knife",
+
+  "item-walkingstick-lantern-copper": "Walking stick with copper lantern",
+  "item-walkingstick-lantern-brass": "Walking stick with brass lantern", 
+  "item-walkingstick-lantern-blackbronze": "Walking stick with black bronze lantern",
+  "item-walkingstick-lantern-bismuth": "Walking stick with bismuth lantern",
+  "item-walkingstick-lantern-tinbronze": "Walking stick with tin bronze lantern",
+  "item-walkingstick-lantern-bismuthbronze": "Walking stick with bismuth bronze lantern",
+  "item-walkingstick-lantern-iron": "Walking stick with iron lantern",
+  "item-walkingstick-lantern-molybdochalkos": "Walking stick with molybdochalkos lantern",
+  "item-walkingstick-lantern-silver": "Walking stick with silver lantern",
+  "item-walkingstick-lantern-gold": "Walking stick with gold lantern",
+  "item-walkingstick-lantern-steel": "Walking stick with steel lantern",
+  "item-walkingstick-lantern-meteoriciron": "Walking stick with meteoric iron lantern",
+  "item-walkingstick-lantern-electrum": "Walking stick with electrum lantern",
+
+  "item-walkingstick-shepherds": "Shepherd's axe",
+  "item-walkingstick-architect": "Architect's walking stick",
+  "item-walkingstick-pathfinder": "Pathfinder's walking stick",
+  "item-walkingstick-leap": "Shepherd's leap stick",
+  "item-walkingstick-blackthorn": "Blackthorn walking stick",
+  "item-walkingstick-witch": "Witch's walking stick",
+  "item-walkingstick-sling": "Staff sling",
+  "item-walkingstick-sling-packed": "Packed staff sling",
+  "item-walkingstick-jonas": "Jonas ash-spitter",
+  "item-walkingstick-blackguard": "Blackguard spearstaff",
+  "item-walkingstick-forlorn": "Forlorn Hope spearstaff",
+  "item-walkingstick-gas": "Walking stick with gas lamp",
+
+  "item-walkingstick-sheathed": "Cane with hidden blade",
+  "item-walkingstick-sheath": "Cane sheath",
+  "item-hidden-blade": "Hidden iron blade",
+  "item-walkingstick-gun-sheathed": "Cane with hidden gearlock",
+  "item-walkingstick-gun-sheath": "Cane holster",
+  "item-hidden-gun": "Hidden gearlock",
+
+  "item-paper-cartridge": "Paper cartridge",
+  "item-paper-cylinder": "Paper cylinder",
+
+  "item-flintlock-mechanism-iron": "Iron gearlock mechanism",
+  "item-hiddenblade-head-iron": "Iron hidden blade head",
+
+  "item-schematic-flintlock": "gearlock schematic",
+
+
+  "itemdesc-walkingstick-sheathed": "A sturdy walking aid that holds a sharp secret \n<font color=\"#B3FFFFFF\"><i>To assemble, hold the <a href=\"handbook://item-walkingstick:walkingstick-sheath\">cane sheath</a> in your off-hand and the <a href=\"handbook://item-walkingstick:hidden-blade\">blade</a> in your main hand, then press F</i></font>",
+  "itemdesc-walkingstick-sheath": "Cane sheath that can hide a <a href=\"handbook://item-walkingstick:hidden-blade\">blade</a>",
+  "itemdesc-hidden-blade": "Iron blade that can be hidden in a <a href=\"handbook://item-walkingstick:walkingstick-sheath\">cane sheath</a>",
+  "itemdesc-walkingstick-gun-sheathed": "An elegant walking aid that holds a deadly secret \n<font color=\"#B3FFFFFF\"><i>To assemble, hold the <a href=\"handbook://item-walkingstick:walkingstick-gun-sheath\">cane holster</a> in your off-hand and the <a href=\"handbook://item-walkingstick:hidden-gun\">gearlock</a> in your main hand, then press F</i></font>",
+  "itemdesc-walkingstick-gun-sheath": "Cane holster that can hide a <a href=\"handbook://item-walkingstick:hidden-gun\">gearlock</a>",
+  "itemdesc-hidden-gun": "Gearlock that can be hidden in a <a href=\"handbook://item-walkingstick:walkingstick-gun-sheath\">cane holster</a> \n<font color=\"#B3FFFFFF\"><i>To reload press alt+r, requires paper cartridges and flax fibers on your toolbar</i></font>",
+
+  "itemdesc-paper-cartridge": "\n<font color=\"#B3FFFFFF\"><i>Used for loading the hidden gearlock mechanism</i></font>",
+  "itemdesc-paper-cylinder": "\n<font color=\"#B3FFFFFF\"><i>Used in the crafting of the paper cartridges</i></font>",
+
+  "itemdesc-flintlock-mechanism-iron": "Strange mechanism once commonly used in firearms, needed to craft a hidden gearlock",
+  "itemdesc-hiddenblade-head-iron": "Slim iron blade head, needed to craft a hidden blade",
+
+  "itemdesc-schematic-flintlock": "Schematic needed to craft the gearlock mechanism",
+
+
+
+
+  "itemdesc-walkingstick": "A handy walking aid that conserves energy while walking",
+  "itemdesc-walkingstick-fine": "A handy, well made walking aid that conserves energy while walking",
+  "itemdesc-walkingstick-crude": "A flimsy walking aid that slightly conserves energy while walking",
+  "itemdesc-walkingstick-cowskull": "A decorated walking aid that conserves energy while walking",
+  "itemdesc-walkingstick-reinforced": "A reinforced walking aid that packs a solid punch",
+  "itemdesc-walkingstick-lantern-copper": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-brass": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-blackbronze": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-bismuth": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-tinbronze": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-bismuthbronze": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-iron": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-molybdochalkos": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-silver": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-gold": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-steel": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-meteoriciron": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+  "itemdesc-walkingstick-lantern-electrum": "A bright walking aid that illuminates the path ahead and conserves energy while walking.",
+
+  "itemdesc-walkingstick-survivalist-copper": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-blackbronze": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-bismuth": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-tinbronze": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-bismuthbronze": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-iron": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-silver": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-gold": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-steel": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+  "itemdesc-walkingstick-survivalist-meteoriciron": "A sharp walking aid that conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Useful for cutting tall grass</i></font>",
+
+  "item-axehead-shepherds-iron": "Iron shepherd's axe head",
+
+  "game:walkingstick-guide-text": "<strong>Walking Sticks</strong>\n<font color=\"#B3FFFFFF\"><i>A trusty companions for your rusty knees.</i></font>\n\nWalking sticks are handheld items that provide passive bonuses while equipped. Every stick improves your walking speed and reduces hunger drain, while some variants come with a unique ability tied to their purpose.\n\nAll walking sticks feature a custom walk animation and an auto-step feature that helps you traverse uneven terrain without jumping.\n\nVariants range from the simple <a href=\"handbook://item-walkingstick:walkingstick-crude\">Crude walking stick</a>, easily crafted on the go, to more unique options like the <a href=\"handbook://item-walkingstick:walkingstick-blackguard\">Blackguard spearstaff</a> which can be thrown and provides much needed aid on long marches, or the cozy <a href=\"handbook://item-walkingstick:walkingstick-witch\">Witch's variant</a> that casts a warm comforting light which can also be used to light a fire. Speaking of fire, the terrifying <a href=\"handbook://item-walkingstick:walkingstick-jonas\">Jonas ash-spitter</a> flamethrower fueled by temporal gears is also at your disposal.\n\nSome sticks support attachments. For example, the <a href=\"handbook://item-walkingstick:walkingstick\">Base walking stick</a> can hold a lantern made of any metal, quartz glass with no lining, or alternatively a cow skull, while the <a href=\"handbook://item-walkingstick:walkingstick-fine\">Fine walking stick</a> can be used to craft a <a href=\"handbook://item-walkingstick:walkingstick-pathfinder\">Pathfinder's walking stick</a>, <a href=\"handbook://item-walkingstick:walkingstick-gas\">Gas lantern</a> variant, a <a href=\"handbook://item-walkingstick:walkingstick-shepherds\">Shepherd's axe</a>, or the <a href=\"handbook://item-walkingstick:walkingstick-architect\">Architect's walking stick</a>.\n\nThose who wish to remain hidden, or perhaps have a little mischievous intent may be interested in a <a href=\"handbook://item-walkingstick:walkingstick-sheathed\">Cane with hidden blade</a> or a <a href=\"handbook://item-walkingstick:walkingstick-gun-sheathed\">Cane with hidden gearlock</a>. Several sticks can also be attached to the side of your elk.\n\nCheck each variant's handbook entry for detailed stats and crafting recipes.\n\n<font color=\"#B3FFFFFF\"><i>May the road rise to meet your steps, traveller.</i></font>",
+  "game:walkingstick-guide-title": "Walking Sticks Guide",
+
+  "itemdesc-walkingstick-gas": "A very bright walking aid that illuminates the path ahead and conserves energy while walking. \n<font color=\"#B3FFFFFF\"><i>Hold right click to amplify the lamp's glow</i></font>",
+  "itemdesc-walkingstick-blackguard": "Sharp and sturdy, eases the burden of heavy armor on long marches while keeping foes at bay.",
+  "itemdesc-walkingstick-forlorn": "Fine and reliable, built for the long road and the last line of defense.",
+  "itemdesc-walkingstick-jonas": "Will melt everything standing before you, also a walking stick.",
+  "itemdesc-walkingstick-shepherds": "Also known as a ciupaga, valaška, or fokos in the mountainous regions. A combination of walking stick and forestry multitool-sidearm, it helps in clearing brushes ahead and provides protection when needed.",
+  "itemdesc-walkingstick-architect": "A walking stick that doubles as a measuring device, letting you measure distance between blocks.",
+  "itemdesc-walkingstick-pathfinder": "A walking stick with an integrated scope, perfect for those who like to see what lies ahead or above.",
+  "itemdesc-walkingstick-leap": "Also known as a garrote in the Volcanic Isles, it aids in traversing rugged terrain.",
+  "itemdesc-walkingstick-blackthorn": "Also called a shillelagh in the Emerald Isle. Conserves energy while walking, brutal when swung.",
+  "itemdesc-walkingstick-witch": "A charming walking aid that casts a warm, comforting light, easing the traveler’s burden with every step. \n<font color=\"#B3FFFFFF\"><i>Useful for starting fires.</i></font>",
+  "itemdesc-walkingstick-sling": "A combination of a walking stick and a heavy-duty sling for ranged combat. \n<font color=\"#B3FFFFFF\"><i>Uses common stones as ammunition.</i></font>"
+
+}

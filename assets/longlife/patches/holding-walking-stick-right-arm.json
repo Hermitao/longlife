@@ -1,0 +1,43 @@
+[
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "Add",
+    "path": "/client/animations/-",
+    "value": {
+      "code": "holding-walking-stick-right-arm",
+      "animation": "Holding-walking-stick-right-arm",
+      "weight": 0.0,
+      "easeInSpeed": 4.0,
+      "easeOutSpeed": 5.0,
+      "elementWeight": {
+        "UpperArmR": 10,
+        "LowerArmR": 10
+      },
+      "elementBlendMode": {
+        "UpperArmR": "AddAverage",
+        "LowerArmR": "AddAverage"
+      }
+    }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "Add",
+    "path": "/animations/-",
+    "value": {
+      "name": "Holding-walking-stick-right-arm",
+      "code": "holding-walking-stick-right-arm",
+      "quantityframes": 1,
+      "onActivityStopped": "EaseOut",
+      "onAnimationEnd": "Repeat",
+      "keyframes": [
+        {
+          "frame": 0,
+          "elements": {
+            "LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -65.0 },
+            "UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -17.0 }
+          }
+        }
+      ]
+    }
+  }
+]

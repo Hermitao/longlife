@@ -1,0 +1,55 @@
+[
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "Add",
+    "path": "/client/animations/-",
+    "value": {
+      "code": "architects-zoomr",
+      "animation": "architects-zoomr",
+      "animationSpeed": 0.9,
+      "weight": 0.0,
+      "easeInSpeed": 4,
+      "easeOutSpeed": 5,
+      "elementWeight": {
+        "UpperArmR": 20,
+        "LowerArmR": 20,
+        "UpperArmL": 20,
+        "LowerArmL": 20
+      },
+      "elementBlendMode": {
+        "UpperArmR": "AddAverage",
+        "LowerArmR": "AddAverage",
+        "UpperArmL": "AddAverage",
+        "LowerArmL": "AddAverage"
+      },
+	  "attributes": {
+                    "soundAtFrame": 3,
+                    "authorative": "true"
+                }
+    }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "Add",
+    "path": "/animations/-",
+    "value": {
+      "name": "architects-zoomr",
+      "code": "architects-zoomr",
+      "quantityframes": 30,
+      "onActivityStopped": "EaseOut",
+      "onAnimationEnd": "hold",
+      "keyframes": [
+				{
+					"frame": 10,
+					"elements": {
+						"UpperArmR": { "rotationX": 22.0, "rotationY": -11.0, "rotationZ": -53.0 },
+						"LowerArmR": { "rotationX": 22.0, "rotationY": -6.0, "rotationZ": -39.0 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 14.0, "rotationZ": 14.0 },
+						"UpperArmL": { "rotationX": -42.0, "rotationY": 42.0, "rotationZ": -80.0 },
+						"LowerArmL": { "rotationX": 14.0, "rotationY": -6.0, "rotationZ": -86.0 }
+					}
+				}
+			]
+    }
+  }
+]

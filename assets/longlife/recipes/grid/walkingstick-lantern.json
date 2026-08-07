@@ -1,0 +1,200 @@
+[
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "copper", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-copper", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "brass", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-brass", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "blackbronze", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-blackbronze", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "bismuth", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-bismuth", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "tinbronze", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-tinbronze", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "bismuthbronze", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-bismuthbronze", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "iron", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-iron", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "molybdochalkos", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-molybdochalkos", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "silver", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-silver", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "gold", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-gold", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "steel", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-steel", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "meteoriciron", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-meteoriciron", 
+    "quantity": 1 
+  }
+},
+
+{
+  "ingredientPattern": "G	S",
+  "ingredients": {
+    "G": { "type": "block", "code": "game:lantern-large-up", "attributes": { "material": "electrum", "lining": "plain", "glass": "quartz"   } },
+    "S": { "type": "item", "code": "walkingstick" }
+  },
+  "width": 1,
+  "height": 2,
+  "output": { 
+    "type": "item", 
+    "code": "walkingstick-lantern-electrum", 
+    "quantity": 1 
+  }
+}
+
+
+
+]

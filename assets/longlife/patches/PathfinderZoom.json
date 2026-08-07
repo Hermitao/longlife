@@ -1,0 +1,49 @@
+[
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "Add",
+    "path": "/client/animations/-",
+    "value": {
+      "code": "PathfinderZoomR",
+      "animation": "PathfinderZoomR",
+      "animationSpeed": 0.9,
+      "weight": 0.0,
+      "easeInSpeed": 4,
+      "easeOutSpeed": 5,
+      "elementWeight": {
+        "UpperArmR": 20,
+        "LowerArmR": 20
+      },
+      "elementBlendMode": {
+        "UpperArmR": "AddAverage",
+        "LowerArmR": "AddAverage"
+      },
+	  "attributes": {
+                    "soundAtFrame": 3,
+                    "authorative": "true"
+                }
+    }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "Add",
+    "path": "/animations/-",
+    "value": {
+      "name": "PathfinderZoomR",
+      "code": "PathfinderZoomR",
+      "quantityframes": 30,
+      "onActivityStopped": "EaseOut",
+      "onAnimationEnd": "hold",
+      "keyframes": [
+				{
+					"frame": 10,
+					"elements": {
+						"UpperArmR": { "rotationX": -8.0, "rotationY": 19.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": 14.0, "rotationY": -6.0, "rotationZ": -91.0 },
+						"ItemAnchor": { "rotationX": 19.0, "rotationY": 0.0, "rotationZ": 17.0 }
+					}
+				}
+			]
+    }
+  }
+]

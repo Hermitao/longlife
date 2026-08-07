@@ -1,0 +1,11 @@
+{
+  "ingredientPattern": "LRS,RS_,S__",
+  "ingredients": {
+    "S": { "type": "item", "code": "game:stick" },
+    "R": { "type": "item", "code": "game:rope" },
+    "L": { "type": "item", "code": "game:cloth-plain" }
+  },
+  "width": 3,
+  "height": 3,
+  "output": { "type": "item", "code": "walkingstick", "quantity": 1 }
+}

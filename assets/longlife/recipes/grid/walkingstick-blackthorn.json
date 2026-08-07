@@ -1,0 +1,13 @@
+{
+  "ingredientPattern": "_BS,CSE,SC_",
+  "ingredients": {
+    "S": { "type": "item", "code": "game:stick" },
+    "R": { "type": "item", "code": "game:rope" },
+    "C": { "type": "item", "code": "game:charcoal" },
+    "B": { "type": "item", "code": "game:beeswax" },
+    "E": { "type": "item", "code": "game:resin" }
+  },
+  "width": 3,
+  "height": 3,
+  "output": { "type": "item", "code": "walkingstick-blackthorn", "quantity": 1 }
+}

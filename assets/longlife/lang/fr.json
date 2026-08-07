@@ -1,0 +1,58 @@
+{
+
+///Traduit par/Translated by Pipidaster
+
+  "item-walkingstick": "Bâton de marche",
+  "item-walkingstick-crude": "Bâton de marche rudimentaire",
+  "item-walkingstick-cowskull": "Bâton de marche avec crâne de vache",
+  "item-walkingstick-reinforced": "Bâton de marche renforcé",
+
+  "item-walkingstick-lantern-copper": "Bâton de marche avec lanterne en cuivre",
+  "item-walkingstick-lantern-brass": "Bâton de marche avec lanterne en laiton",
+  "item-walkingstick-lantern-blackbronze": "Bâton de marche avec lanterne en bronze noir",
+  "item-walkingstick-lantern-bismuth": "Bâton de marche avec lanterne en bismuth",
+  "item-walkingstick-lantern-tinbronze": "Bâton de marche avec lanterne en bronze à l’étain",
+  "item-walkingstick-lantern-bismuthbronze": "Bâton de marche avec lanterne en bronze au bismuth",
+  "item-walkingstick-lantern-iron": "Bâton de marche avec lanterne en fer",
+  "item-walkingstick-lantern-molybdochalkos": "Bâton de marche avec lanterne en molybdochalkos",
+  "item-walkingstick-lantern-silver": "Bâton de marche avec lanterne en argent",
+  "item-walkingstick-lantern-gold": "Bâton de marche avec lanterne en or",
+  "item-walkingstick-lantern-steel": "Bâton de marche avec lanterne en acier",
+  "item-walkingstick-lantern-meteoriciron": "Bâton de marche avec lanterne en fer météoritique",
+  "item-walkingstick-lantern-electrum": "Bâton de marche avec lanterne en électrum",
+
+  "item-walkingstick-shepherds": "Bâton de marche de berger",
+  "item-walkingstick-architect": "Bâton de marche d’architecte",
+  "item-walkingstick-pathfinder": "Bâton de marche d’éclaireur",
+  "item-walkingstick-leap": "Bâton de saut de berger",
+  "item-walkingstick-blackthorn": "Bâton de marche en prunellier",
+  "item-walkingstick-witch": "Bâton de marche de sorcière",
+
+  "itemdesc-walkingstick": "Une aide à la marche pratique qui économise l’énergie lors des déplacements",
+  "itemdesc-walkingstick-crude": "Une aide à la marche fragile qui économise légèrement l’énergie lors des déplacements",
+  "itemdesc-walkingstick-cowskull": "Une aide à la marche décorée qui économise l’énergie lors des déplacements",
+  "itemdesc-walkingstick-reinforced": "Une aide à la marche renforcée capable de porter un coup solide",
+  "itemdesc-walkingstick-lantern-copper": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-brass": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-blackbronze": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-bismuth": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-tinbronze": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-bismuthbronze": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-iron": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-molybdochalkos": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-silver": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-gold": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-steel": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-meteoriciron": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+  "itemdesc-walkingstick-lantern-electrum": "Une aide à la marche lumineuse qui éclaire le chemin devant vous et économise l’énergie lors des déplacements.",
+
+  "item-axehead-shepherds-iron": "Tête de hache de berger en fer",
+
+  "itemdesc-walkingstick-shepherds": "Également connue sous le nom de ciupaga, valaška ou fokos dans les régions montagneuses. Combinaison d’un bâton de marche et d’un outil forestier polyvalent–arme d’appoint, elle aide à dégager les broussailles et offre une protection en cas de besoin.",
+  "itemdesc-walkingstick-architect": "Un bâton de marche faisant également office d’outil de mesure, permettant de mesurer la distance entre les blocs.",
+  "itemdesc-walkingstick-pathfinder": "Un bâton de marche équipé d’un télescope compact, idéal pour observer le chemin devant soi ou admirer les étoiles.",
+  "itemdesc-walkingstick-leap": "Également connu sous le nom de garrote dans les Îles Volcaniques, il aide à traverser les terrains accidentés.",
+  "itemdesc-walkingstick-blackthorn": "Aussi appelé shillelagh sur l’Île d’Émeraude. Économise l’énergie lors de la marche, mais redoutable lorsqu’il est manié.",
+  "itemdesc-walkingstick-witch": "Une aide à la marche enchanteresse qui diffuse une lumière chaleureuse et réconfortante, allégeant le fardeau du voyageur à chaque pas."
+
+}

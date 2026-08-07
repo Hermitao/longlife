@@ -1,0 +1,11 @@
+{
+  "ingredientPattern": "O_O,O_O,WOW",
+  "ingredients": {
+    "O": { "type": "item", "code": "game:paper-parchment" },
+    "W": { "type": "item", "code": "game:beeswax" }
+    
+  },
+  "width": 3,
+  "height": 3,
+  "output": { "type": "item", "code": "walkingstick:paper-cylinder", "quantity": 16 }
+}

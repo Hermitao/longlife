@@ -1,0 +1,13 @@
+{
+  "ingredientPattern": "LSS,RCS,TSL",
+  "ingredients": {
+    "S": { "type": "item", "code": "game:stick" },
+    "R": { "type": "item", "code": "game:rope" },
+    "L": { "type": "block", "code": "game:wildvine-section-*" },
+    "T": { "type": "item", "code": "game:flaxtwine" },
+    "C": { "type": "item", "code": "game:candle", "quantity": 3 }
+  },
+  "width": 3,
+  "height": 3,
+  "output": { "type": "item", "code": "walkingstick-witch", "quantity": 1 }
+}

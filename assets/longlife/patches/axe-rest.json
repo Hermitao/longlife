@@ -1,0 +1,52 @@
+[
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "Add",
+    "path": "/client/animations/-",
+    "value": {
+      "code": "shepherds-axe-rest",
+      "animation": "shepherds-axe-rest",
+      "animationSpeed": 0.9,
+      "weight": 0.0,
+      "easeInSpeed": 4,
+      "easeOutSpeed": 5,
+      "elementWeight": {
+        "UpperArmR": 20,
+        "LowerArmR": 20,
+        "UpperArmL": 20,
+        "LowerArmL": 20
+      },
+      "elementBlendMode": {
+        "UpperArmR": "AddAverage",
+        "LowerArmR": "AddAverage",
+        "UpperArmL": "AddAverage",
+        "LowerArmL": "AddAverage"
+      }
+	  
+    }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "Add",
+    "path": "/animations/-",
+    "value": {
+      "name": "shepherds-axe-rest",
+      "code": "shepherds-axe-rest",
+      "quantityframes": 30,
+      "onActivityStopped": "EaseOut",
+      "onAnimationEnd": "hold",
+      "keyframes": [
+				{
+					"frame": 10,
+					"elements": {
+						"UpperArmR": { "rotationX": 14.0, "rotationY": 33.0, "rotationZ": -30.0 },
+						"LowerArmR": { "rotationX": -19.0, "rotationY": 3.0, "rotationZ": -69.0 },
+						"ItemAnchor": { "offsetX": 2.5, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 28.0, "rotationY": 0.0, "rotationZ": -3.0 },
+						"UpperArmL": { "rotationX": -3.0, "rotationY": -22.0, "rotationZ": -25.0 },
+						"LowerArmL": { "rotationX": 8.0, "rotationY": 0.0, "rotationZ": -78.0 }
+					}
+				}
+			]
+    }
+  }
+]

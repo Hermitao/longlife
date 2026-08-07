@@ -1,0 +1,36 @@
+[
+  {
+    "ingredientPattern": "_A_,BBB,_W_",
+    "ingredients": {
+      "B": { "type": "item", "code": "game:bone" },
+      "W": { "type": "item", "code": "walkingstick" },
+      "A": { "type": "item", "code": "game:antler-{type}-*" }
+  
+     
+    },
+    "width": 3,
+    "height": 3,
+    "output": { 
+      "type": "item", 
+      "code": "walkingstick-cowskull", 
+      "quantity": 1 
+    }
+  },
+
+   {
+    "ingredientPattern": "A	B",
+    "ingredients": {
+      "A": { "type": "block", "code": "game:bonyremains-cowskull-up" },
+      "B": { "type": "item", "code": "walkingstick" }
+  
+     
+    },
+    "width": 1,
+    "height": 2,
+    "output": { 
+      "type": "item", 
+      "code": "walkingstick-cowskull", 
+      "quantity": 1 
+    }
+  }
+]

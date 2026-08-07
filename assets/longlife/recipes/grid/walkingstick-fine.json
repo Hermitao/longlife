@@ -1,0 +1,11 @@
+{
+    "ingredientPattern": "LHB,HB_,B__",
+    "ingredients": {
+      "B": { "type": "block", "code": "game:supportbeam-*", "name": "wood", "allowedVariants": ["oak"] },
+      "H": { "type": "item", "code": "game:beeswax" },
+      "L": { "type": "item", "code": "game:leather-normal-plain", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "item", "code": "walkingstick-fine", "quantity": 1 }
+  }

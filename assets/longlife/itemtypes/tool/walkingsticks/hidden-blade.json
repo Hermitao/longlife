@@ -1,0 +1,98 @@
+{
+  "code": "hidden-blade",
+  "class": "ItemWalkingStickHidden",
+  "storageFlags": "257",
+  "maxstacksize": 1,
+  "tags": ["weapon", "weapon-melee"],
+  "damagedby": ["blockbreaking", "attacking"],
+
+  "shape": { "base": "tool/walkingsticks/hidden-blade" },
+
+  "tool": "sword",
+
+
+
+  "creativeinventory": {
+    "general": ["*"],
+    "items": ["*"],
+    "tools": ["*"]
+  },
+
+ 
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "ctrlKey": true,
+        "selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+        "collisionBox":  { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
+      }
+    },
+    { "name": "AnimationAuthoritative", "properties": { "onlyOnEntity": true } },
+    { "name": "Buffable" },
+    { "name": "Sharpenable" }
+  ],
+
+  "attributes": {
+    "toolrackTransform": {
+       translation: { x: -0.1, y: 0.55, z: 0 },
+      rotation: { x: 0, y: -180, z: -1 },
+      scale: 1.25
+    },
+
+    "groundStorageTransform": {
+			translation: { x: 0, y: 0.24, z: -0.095 },
+      rotation: { x: 13, y: -92, z: 87 },
+      scale: 0.88
+		},
+
+    "handbook": {
+      "groupBy": ["walkingstick-*"]
+    }
+  },
+
+  "durabilitybytype": {
+    "hidden-blade": 1050
+  },
+  "attackpowerbytype": {
+    "hidden-blade": 4.2
+  },
+  "tooltierbytype": {
+    "hidden-blade": 4
+  },
+
+  "materialDensity": 450,
+  "attackRange": 2.5,
+
+    guiTransform: {
+    translation: { x: -2, y: 7, z: 0 },
+    rotation: { x: -94, y: 47, z: -22 },
+    origin: { x: 0.5, y: 0.1, z: 0.5 },
+    scale: 1.95
+  },
+
+  "fpHandTransform": {
+    "translation": { "x": -0.35, "y": -0.45, "z": 0.55 },
+    "rotation": { "x": -20, "y": 0, "z": 75 },
+    "origin": { "x": 0.2, "y": 0.5, "z": 0.5 },
+    "scale": 2.5
+  },
+
+  "tpHandTransform": {
+    translation: { x: -1.02, y: -0.58, z: -0.2 },
+    rotation: { x: 85, y: 0, z: 0 },
+    scale: 0.8
+  },
+
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0.5, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+    "scale": 3.8
+  },
+
+  "heldTpHitAnimation": "spearhit",
+  "heldTpUseAnimation": "spearidle"
+}

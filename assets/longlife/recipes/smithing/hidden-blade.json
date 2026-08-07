@@ -1,0 +1,10 @@
+{
+	ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["iron"] },
+	pattern: [[
+		"____########__",
+		"_#############",
+		"____########__"
+	]],
+	name: "Axe",
+	output: { type: "item", code: "hiddenblade-head-{metal}"  }
+}

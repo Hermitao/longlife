@@ -1,0 +1,58 @@
+{
+
+///Translated by/přeložil Pipidaster
+
+  "item-walkingstick": "Vycházková hůl",
+  "item-walkingstick-crude": "Hrubá vycházková hůl",
+  "item-walkingstick-cowskull": "Vycházková hůl s kravskou lebkou",
+  "item-walkingstick-reinforced": "Zesílená vycházková hůl",
+
+  "item-walkingstick-lantern-copper": "Vycházková hůl s měděnou lucernou",
+  "item-walkingstick-lantern-brass": "Vycházková hůl s mosaznou lucernou",
+  "item-walkingstick-lantern-blackbronze": "Vycházková hůl s lucernou z černého bronzu",
+  "item-walkingstick-lantern-bismuth": "Vycházková hůl s vizmutovou lucernou",
+  "item-walkingstick-lantern-tinbronze": "Vycházková hůl s cínobronzovou lucernou",
+  "item-walkingstick-lantern-bismuthbronze": "Vycházková hůl s vizmutobronzovou lucernou",
+  "item-walkingstick-lantern-iron": "Vycházková hůl se železnou lucernou",
+  "item-walkingstick-lantern-molybdochalkos": "Vycházková hůl s lucernou z molybdochalkosu",
+  "item-walkingstick-lantern-silver": "Vycházková hůl se stříbrnou lucernou",
+  "item-walkingstick-lantern-gold": "Vycházková hůl se zlatou lucernou",
+  "item-walkingstick-lantern-steel": "Vycházková hůl s ocelovou lucernou",
+  "item-walkingstick-lantern-meteoriciron": "Vycházková hůl s lucernou z meteoritického železa",
+  "item-walkingstick-lantern-electrum": "Vycházková hůl s elektrickou lucernou",
+
+  "item-walkingstick-shepherds": "Pastýřská sekera",
+  "item-walkingstick-architect": "Architektonická vycházková hůl",
+  "item-walkingstick-pathfinder": "Vycházková hůl stopaře",
+  "item-walkingstick-leap": "Pastýřská skákací hůl",
+  "item-walkingstick-blackthorn": "Trnková vycházková hůl",
+  "item-walkingstick-witch": "Čarodějnická vycházková hůl",
+
+  "itemdesc-walkingstick": "Praktická pomůcka k chůzi, která šetří energii při pohybu",
+  "itemdesc-walkingstick-crude": "Chatěrná pomůcka k chůzi, která mírně šetří energii při pohybu",
+  "itemdesc-walkingstick-cowskull": "Zdobená pomůcka k chůzi, která šetří energii při pohybu",
+  "itemdesc-walkingstick-reinforced": "Zesílená pomůcka k chůzi, která dokáže zasadit solidní úder",
+  "itemdesc-walkingstick-lantern-copper": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-brass": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-blackbronze": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-bismuth": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-tinbronze": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-bismuthbronze": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-iron": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-molybdochalkos": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-silver": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-gold": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-steel": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-meteoriciron": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+  "itemdesc-walkingstick-lantern-electrum": "Pomůcka k chůzi s lucernou, která osvětluje cestu před vámi a šetří energii při pohybu.",
+
+  "item-axehead-shepherds-iron": "Železná hlava pastýřské sekery",
+
+  "itemdesc-walkingstick-shepherds": "Také známá jako ciupaga, valaška nebo fokos v horských oblastech. Kombinace vycházkové hole a lesnického multitoolu-boční zbraně, pomáhá při prosekávání porostu-rostlin před sebou a poskytuje ochranu v případě potřeby.",
+  "itemdesc-walkingstick-architect": "Vycházková hůl, která slouží také jako měřicí nástroj a umožňuje měřit vzdálenost mezi bloky.",
+  "itemdesc-walkingstick-pathfinder": "Vycházková hůl vybavená kompaktním dalekohledem, ideální pro průzkum cesty před vámi nebo pozorování hvězd.",
+  "itemdesc-walkingstick-leap": "Také známá jako garrote na Vulkanických ostrovech, pomáhá při pohybu v náročném terénu.",
+  "itemdesc-walkingstick-blackthorn": "Také nazývaná shillelagh na Smaragdovém ostrově. Šetří energii při chůzi a je brutální při úderu.",
+  "itemdesc-walkingstick-witch": "Okouzlující pomůcka k chůzi, která vyzařuje teplé, uklidňující světlo a s každým krokem ulehčuje cestovateli jeho břemeno."
+
+}

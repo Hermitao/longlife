@@ -1,0 +1,12 @@
+{
+	ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["iron"] },
+	pattern: [[
+		"_##______",
+		"#########",
+		"###__####",
+		"_####__#_",
+		"__###____"
+	]],
+	name: "Axe",
+	output: { type: "item", code: "flintlock-mechanism-{metal}"  }
+}

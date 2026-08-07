@@ -1,0 +1,14 @@
+{
+    "ingredientPattern": "__B,_B_,S__",
+    "ingredients": {
+      "B": { "type": "block", "code": "game:supportbeam-*", "name": "wood", "allowedVariants": ["oak"] },
+      "S": { "type": "item", "code": "game:metalnailsandstrips-brass", "name": "metal", "allowedVariants": ["brass"], "quantity": 1 }
+      
+      
+     
+      
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "item", "code": "walkingstick:walkingstick-sheath", "quantity": 1 }
+  }

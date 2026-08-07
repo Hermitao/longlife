@@ -1,0 +1,165 @@
+{
+	"editor": {
+		"collapsedPaths": ",Root/Wrapping1,Root/rope/knot/holder 1/Base1/candle,Root/rope/knot/holder 1/Base1/base2,Root/Grid",
+		"allAngles": false,
+		"backfaceCulling": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"plain": [16,16],
+		"oak": [16,16],
+		"rope": [16,16],
+		"yellow": [16,16],
+		"white": [16,16],
+		"red": [16,16],
+		"purple": [16,16],
+		"pink": [16,16],
+		"orange": [16,16],
+		"gray": [16,16],
+		"blue": [16,16],
+		"ebony": [16,16],
+		"plain2": [16,16],
+		"black": [16,16],
+		"blue2": [16,16],
+		"brown": [16,16],
+		"green": [16,16],
+		"leather": [16,16],
+		"oak2": [16,16],
+		"quartz": [16,16],
+		"copper-deco": [16,16],
+		"copper": [16,16],
+		"candle": [16,16],
+		"copper2": [16,16],
+		"copper3": [16,16],
+		"copper4": [16,16],
+		"copper5": [16,16],
+		"bismuth": [16,16],
+		"electrum": [16,16],
+		"tinbronze": [16,16],
+		"brass": [16,16],
+		"steel": [16,16],
+		"iron": [16,16],
+		"leather1": [16,16],
+		"leather2": [16,16],
+		"blackthorn": [16,16]
+	},
+	"textures": {
+		"blackthorn": "block/wood/blackthorn",
+		"leather1": "material/leather1",
+		"leather2": "material/leather2"
+	},
+	"elements": [
+		{
+			"name": "Handle",
+			"from": [ 0.2894, 0.0, 7.5 ],
+			"to": [ 12.2894, 1.25, 8.75 ],
+			"rotationOrigin": [ -3.0, 0.0, 8.0 ],
+			"rotationX": 90.0,
+			"rotationZ": 180.0,
+			"faces": {
+				"north": { "texture": "#blackthorn", "uv": [ 0.5, 7.5, 12.5, 8.5 ], "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#blackthorn", "uv": [ 2.0, 7.5, 3.0, 8.5 ], "windMode": [-1,-1,-1,-1] },
+				"south": { "texture": "#blackthorn", "uv": [ 0.0, 7.5, 12.0, 8.5 ] },
+				"west": { "texture": "#blackthorn", "uv": [ 2.5, 7.0, 3.5, 8.0 ], "windMode": [-1,-1,-1,-1] },
+				"up": { "texture": "#blackthorn", "uv": [ 0.0, 7.5, 12.0, 8.5 ], "windMode": [-1,-1,-1,-1] },
+				"down": { "texture": "#blackthorn", "uv": [ 0.5, 8.0, 12.5, 9.0 ] }
+			}
+		},
+		{
+			"name": "Grip",
+			"from": [ 15.1, 0.375, 7.875 ],
+			"to": [ 30.6, 1.875, 9.375 ],
+			"rotationOrigin": [ 15.0, 0.5, 8.0 ],
+			"rotationX": 90.0,
+			"rotationZ": -180.0,
+			"faces": {
+				"north": { "texture": "#blackthorn", "uv": [ 0.0, 9.0, 15.5, 10.5 ] },
+				"east": { "texture": "#blackthorn", "uv": [ 0.5, 9.5, 2.0, 11.0 ] },
+				"south": { "texture": "#blackthorn", "uv": [ 0.0, 8.0, 15.5, 9.5 ] },
+				"west": { "texture": "#blackthorn", "uv": [ 3.5, 7.0, 5.0, 8.5 ] },
+				"up": { "texture": "#blackthorn", "uv": [ 0.0, 7.5, 16.0, 9.5 ], "autoUv": false },
+				"down": { "texture": "#blackthorn", "uv": [ 0.0, 7.5, 15.5, 9.0 ] }
+			}
+		},
+		{
+			"name": "Wood defect2",
+			"from": [ 12.5, -0.5, 7.5 ],
+			"to": [ 21.0, 0.5, 8.5 ],
+			"rotationOrigin": [ 12.0, 0.5, 7.0 ],
+			"rotationX": 90.0,
+			"rotationY": -2.0,
+			"rotationZ": -180.0,
+			"faces": {
+				"north": { "texture": "#blackthorn", "uv": [ 3.5, 8.5, 12.0, 9.5 ] },
+				"east": { "texture": "#blackthorn", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "enabled": false },
+				"south": { "texture": "#blackthorn", "uv": [ 4.0, 8.0, 10.5, 6.5 ], "autoUv": false },
+				"west": { "texture": "#blackthorn", "uv": [ 15.0, 6.5, 16.0, 7.5 ] },
+				"up": { "texture": "#blackthorn", "uv": [ 4.5, 7.0, 10.0, 11.0 ], "rotation": 90, "autoUv": false },
+				"down": { "texture": "#blackthorn", "uv": [ 4.0, 8.0, 13.0, 7.0 ], "autoUv": false }
+			}
+		},
+		{
+			"name": "Wrapping1",
+			"from": [ -30.3, 2.2, 9.7 ],
+			"to": [ -24.1, 4.0, 11.5 ],
+			"rotationOrigin": [ -10.0, 1.5, 9.0 ],
+			"rotationX": 90.0,
+			"rotationZ": -180.0,
+			"faces": {
+				"north": { "texture": "#leather2", "uv": [ 0.5, 6.5, 15.5, 10.5 ], "autoUv": false },
+				"east": { "texture": "#leather2", "uv": [ 3.0, 8.0, 13.0, 9.5 ], "autoUv": false },
+				"south": { "texture": "#leather2", "uv": [ 0.0, 5.0, 16.0, 8.5 ], "autoUv": false },
+				"west": { "texture": "#leather2", "uv": [ 2.0, 5.5, 15.0, 9.5 ], "autoUv": false },
+				"up": { "texture": "#leather2", "uv": [ 0.0, 5.5, 16.0, 9.6 ], "autoUv": false },
+				"down": { "texture": "#leather2", "uv": [ 0.0, 11.0, 16.0, 15.0 ], "autoUv": false }
+			},
+			"children": [
+				{
+					"name": "Wrapping8",
+					"from": [ 5.8, -0.1, -0.1 ],
+					"to": [ 6.3, 1.9, 1.9 ],
+					"rotationOrigin": [ 26.3, -0.7, -0.7 ],
+					"faces": {
+						"north": { "texture": "#leather1", "uv": [ 6.5, 1.0, 8.0, 5.0 ], "autoUv": false },
+						"east": { "texture": "#leather1", "uv": [ 2.5, 1.5, 10.5, 3.0 ], "autoUv": false },
+						"south": { "texture": "#leather1", "uv": [ 5.0, 1.0, 6.5, 4.0 ], "autoUv": false },
+						"west": { "texture": "#leather1", "uv": [ 4.5, 0.5, 10.0, 4.0 ], "autoUv": false },
+						"up": { "texture": "#leather1", "uv": [ 2.0, 0.5, 3.5, 5.1 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+						"down": { "texture": "#leather1", "uv": [ 4.0, 0.5, 6.0, 4.5 ], "autoUv": false }
+					}
+				},
+				{
+					"name": "Wrapping9",
+					"from": [ -0.2, -0.1, -0.1 ],
+					"to": [ 0.3, 1.9, 1.9 ],
+					"rotationOrigin": [ 20.3, -0.7, -0.7 ],
+					"faces": {
+						"north": { "texture": "#leather1", "uv": [ 6.5, 1.0, 8.0, 5.0 ], "autoUv": false },
+						"east": { "texture": "#leather1", "uv": [ 2.5, 1.5, 10.5, 3.0 ], "autoUv": false },
+						"south": { "texture": "#leather1", "uv": [ 5.0, 1.0, 6.5, 4.0 ], "autoUv": false },
+						"west": { "texture": "#leather1", "uv": [ 4.5, 0.5, 10.0, 4.0 ], "autoUv": false },
+						"up": { "texture": "#leather1", "uv": [ 2.0, 0.5, 3.5, 5.1 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+						"down": { "texture": "#leather1", "uv": [ 4.0, 0.5, 6.0, 4.5 ], "autoUv": false }
+					}
+				}
+			]
+		},
+		{
+			"name": "Grip2",
+			"from": [ 30.6418, 0.4201, 7.9279 ],
+			"to": [ 38.1418, 1.8201, 9.3279 ],
+			"rotationOrigin": [ 15.0, 0.5, 8.0 ],
+			"rotationX": 90.0,
+			"rotationZ": -180.0,
+			"faces": {
+				"north": { "texture": "#blackthorn", "uv": [ 0.0, 7.0, 7.5, 8.0 ] },
+				"east": { "texture": "#blackthorn", "uv": [ 0.5, 9.5, 1.5, 10.5 ] },
+				"south": { "texture": "#blackthorn", "uv": [ 8.5, 9.5, 16.0, 10.5 ] },
+				"west": { "texture": "#blackthorn", "uv": [ 3.5, 7.0, 4.5, 8.0 ] },
+				"up": { "texture": "#blackthorn", "uv": [ 0.0, 7.5, 7.5, 8.5 ] },
+				"down": { "texture": "#blackthorn", "uv": [ 2.5, 7.5, 10.0, 8.5 ] }
+			}
+		}
+	]}
