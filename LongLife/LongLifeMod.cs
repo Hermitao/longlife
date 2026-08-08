@@ -7,14 +7,32 @@ namespace LongLife;
 
 public class LongLifeMod : ModSystem
 {
+    private const string LongLifeModifier = "longlife";
+
     private ICoreServerAPI? serverApi;
 
     // Survival time accumulated for each player.
-    // The value is measured in in-game days.
+    // Measured in in-game days.
     private readonly Dictionary<string, double> survivalDays = new();
 
-    // The last world-time value we observed for each online player.
+    // Last world-time value observed for each online player.
     private readonly Dictionary<string, double> lastWorldTimes = new();
+
+    // Last whole survival day for which we printed diagnostics.
+    private readonly Dictionary<string, int> lastLoggedDays = new();
+
+    // Stats affected by LongLife.
+    private static readonly string[] LongLifeStats =
+    {
+        "maxhealthExtraPoints",
+        "rangedWeaponsDamage",
+        "meleeWeaponsDamage",
+        "animalLootDropRate",
+        "forageDropRate",
+        "wildCropDropRate",
+        "oreDropRate",
+        "miningSpeedMul"
+    };
 
     public override void StartServerSide(ICoreServerAPI api)
     {
@@ -40,10 +58,14 @@ public class LongLifeMod : ModSystem
 
         lastWorldTimes[uid] = serverApi!.World.Calendar.TotalDays;
 
+        lastLoggedDays[uid] = (int)Math.Floor(survivalDays[uid]);
+
         Mod.Logger.Notification(
             $"LongLife: {player.PlayerName} joined. " +
             $"Survival time: {survivalDays[uid]:F3} days."
         );
+
+        UpdateLongLifeStats(player);
     }
 
     private void OnPlayerLeave(IServerPlayer player)
@@ -51,6 +73,7 @@ public class LongLifeMod : ModSystem
         string uid = player.PlayerUID;
 
         lastWorldTimes.Remove(uid);
+        lastLoggedDays.Remove(uid);
 
         Mod.Logger.Notification(
             $"LongLife: {player.PlayerName} left. " +
@@ -89,9 +112,94 @@ public class LongLifeMod : ModSystem
                     survivalDays[uid] + elapsed,
                     60.0
                 );
+
+                UpdateLongLifeStats(player);
+
+                // Temporary diagnostic.
+                int currentDay = (int)Math.Floor(survivalDays[uid]);
+
+                if (
+                    currentDay > 0 &&
+                    currentDay != lastLoggedDays.GetValueOrDefault(uid)
+                )
+                {
+                    lastLoggedDays[uid] = currentDay;
+
+                    EntityFloatStats? healthStat =
+                        GetStat(player, "maxhealthExtraPoints");
+
+                    if (healthStat != null)
+                    {
+                        Mod.Logger.Notification(
+                            $"LongLife: {player.PlayerName} reached " +
+                            $"{survivalDays[uid]:F3} survival days. " +
+                            $"HealthStat: {healthStat.GetBlended():F4}"
+                        );
+                    }
+                    else
+                    {
+                        Mod.Logger.Warning(
+                            "LongLife: Could not find maxhealthExtraPoints."
+                        );
+                    }
+                }
             }
 
             lastWorldTimes[uid] = currentWorldTime;
         }
+    }
+
+    private void UpdateLongLifeStats(IServerPlayer player)
+    {
+        if (!survivalDays.TryGetValue(
+                player.PlayerUID,
+                out double days))
+        {
+            return;
+        }
+
+        // 1% per in-game day, capped at 60%.
+        //
+        // 0 days  -> 0.00
+        // 1 day   -> 0.01
+        // 30 days -> 0.30
+        // 60 days -> 0.60
+        float bonus = (float)(Math.Min(days, 60.0) / 100.0);
+
+        foreach (string statName in LongLifeStats)
+        {
+            EntityFloatStats? stat = GetStat(player, statName);
+
+            if (stat == null)
+            {
+                Mod.Logger.Warning(
+                    $"LongLife: Could not find stat '{statName}' " +
+                    $"for player {player.PlayerName}."
+                );
+
+                continue;
+            }
+
+            stat.Set(
+                LongLifeModifier,
+                bonus
+            );
+        }
+    }
+
+    private EntityFloatStats? GetStat(
+        IServerPlayer player,
+        string statName
+    )
+    {
+        foreach (var stat in player.Entity.Stats)
+        {
+            if (stat.Key == statName)
+            {
+                return stat.Value;
+            }
+        }
+
+        return null;
     }
 }
