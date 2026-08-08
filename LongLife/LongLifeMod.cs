@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Vintagestory.API.Common;
-using VintageStory.API.Server;
+using Vintagestory.API.Server;
 
 namespace LongLife;
 
@@ -8,34 +9,56 @@ public class LongLifeMod : ModSystem
 {
     private ICoreServerAPI? serverApi;
 
-    private readonly Dictionary<string, SurvivalPlayerData> playerData = new();
+    // Survival time accumulated for each player.
+    // The value is measured in in-game days.
+    private readonly Dictionary<string, double> survivalDays = new();
+
+    // The last world-time value we observed for each online player.
     private readonly Dictionary<string, double> lastWorldTimes = new();
+
+    public override void StartServerSide(ICoreServerAPI api)
+    {
+        serverApi = api;
+
+        api.Event.PlayerJoin += OnPlayerJoin;
+        api.Event.PlayerLeave += OnPlayerLeave;
+
+        // Update approximately once per second.
+        api.Event.RegisterGameTickListener(UpdateSurvivalTime, 1000);
+
+        Mod.Logger.Notification("LongLife initialized!");
+    }
 
     private void OnPlayerJoin(IServerPlayer player)
     {
         string uid = player.PlayerUID;
 
-        playerData.TryAdd(uid, new SurvivalPlayerData());
+        if (!survivalDays.ContainsKey(uid))
+        {
+            survivalDays[uid] = 0.0;
+        }
 
         lastWorldTimes[uid] = serverApi!.World.Calendar.TotalDays;
 
         Mod.Logger.Notification(
-            $"{player.PlayerName} joined at day {lastWorldTimes[uid]:F2}"
+            $"LongLife: {player.PlayerName} joined. " +
+            $"Survival time: {survivalDays[uid]:F3} days."
         );
     }
 
-    private void OnPlayerDeath(IServerPlayer player)
+    private void OnPlayerLeave(IServerPlayer player)
     {
-        if (!playerData.TryGetValue(player.PlayerUID, out SurvivalPlayerData? data))
-            return;
+        string uid = player.PlayerUID;
 
-        data.SurvivalDays = 0;
+        lastWorldTimes.Remove(uid);
 
-        lastWorldTimes[player.PlayerUID] =
-            serverApi!.World.Calendar.TotalDays;
+        Mod.Logger.Notification(
+            $"LongLife: {player.PlayerName} left. " +
+            $"Survival time: {survivalDays.GetValueOrDefault(uid):F3} days."
+        );
     }
 
-    private void UpdatePlayers(float dt)
+    private void UpdateSurvivalTime(float dt)
     {
         if (serverApi == null)
             return;
@@ -46,36 +69,29 @@ public class LongLifeMod : ModSystem
         {
             string uid = player.PlayerUID;
 
-            if (!playerData.TryGetValue(uid, out SurvivalPlayerData? data))
-                continue;
+            if (!survivalDays.ContainsKey(uid))
+            {
+                survivalDays[uid] = 0.0;
+            }
 
-            if (!lastWorldTimes.TryGetValue(uid, out double lastTime))
+            if (!lastWorldTimes.TryGetValue(uid, out double lastWorldTime))
             {
                 lastWorldTimes[uid] = currentWorldTime;
                 continue;
             }
 
-            double elapsed = currentWorldTime - lastTime;
+            double elapsed = currentWorldTime - lastWorldTime;
 
+            // Only count forward movement of the game clock.
             if (elapsed > 0)
             {
-                data.SurvivalDays = Math.Min(
-                    data.SurvivalDays + elapsed,
+                survivalDays[uid] = Math.Min(
+                    survivalDays[uid] + elapsed,
                     60.0
                 );
             }
 
             lastWorldTimes[uid] = currentWorldTime;
         }
-    }
-
-    public override void StartServerSide(ICoreServerAPI api)
-    {
-        serverApi = api;
-
-        api.Event.PlayerJoin += OnPlayerJoin;
-        api.Event.RegisterGameTickListener(UpdatePlayers, 1000);
-
-        Mod.Logger.Notification("Survival Progression initialized!");
     }
 }
