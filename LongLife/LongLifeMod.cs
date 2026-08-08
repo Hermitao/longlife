@@ -21,25 +21,13 @@ public class LongLifeMod : ModSystem
     // Last whole survival day for which we printed diagnostics.
     private readonly Dictionary<string, int> lastLoggedDays = new();
 
-    // Stats affected by LongLife.
-    private static readonly string[] LongLifeStats =
-    {
-        "maxhealthExtraPoints",
-        "rangedWeaponsDamage",
-        "meleeWeaponsDamage",
-        "animalLootDropRate",
-        "forageDropRate",
-        "wildCropDropRate",
-        "oreDropRate",
-        "miningSpeedMul"
-    };
-
     public override void StartServerSide(ICoreServerAPI api)
     {
         serverApi = api;
 
         api.Event.PlayerJoin += OnPlayerJoin;
         api.Event.PlayerLeave += OnPlayerLeave;
+        api.Event.PlayerDeath += OnPlayerDeath;
 
         // Update approximately once per second.
         api.Event.RegisterGameTickListener(UpdateSurvivalTime, 1000);
@@ -56,9 +44,11 @@ public class LongLifeMod : ModSystem
             survivalDays[uid] = 0.0;
         }
 
-        lastWorldTimes[uid] = serverApi!.World.Calendar.TotalDays;
+        lastWorldTimes[uid] =
+            serverApi!.World.Calendar.TotalDays;
 
-        lastLoggedDays[uid] = (int)Math.Floor(survivalDays[uid]);
+        lastLoggedDays[uid] =
+            (int)Math.Floor(survivalDays[uid]);
 
         Mod.Logger.Notification(
             $"LongLife: {player.PlayerName} joined. " +
@@ -81,14 +71,42 @@ public class LongLifeMod : ModSystem
         );
     }
 
+    private void OnPlayerDeath(
+        IServerPlayer player,
+        DamageSource damageSource
+    )
+    {
+        string uid = player.PlayerUID;
+
+        // Reset LongLife survival time.
+        survivalDays[uid] = 0.0;
+
+        // Prevent time between death and respawn from being counted.
+        if (serverApi != null)
+        {
+            lastWorldTimes[uid] =
+                serverApi.World.Calendar.TotalDays;
+        }
+
+        // Reset all LongLife modifiers.
+        UpdateLongLifeStats(player);
+
+        Mod.Logger.Notification(
+            $"LongLife: {player.PlayerName} died. " +
+            $"Survival time reset to 0 days."
+        );
+    }
+
     private void UpdateSurvivalTime(float dt)
     {
         if (serverApi == null)
             return;
 
-        double currentWorldTime = serverApi.World.Calendar.TotalDays;
+        double currentWorldTime =
+            serverApi.World.Calendar.TotalDays;
 
-        foreach (IServerPlayer player in serverApi.World.AllOnlinePlayers)
+        foreach (IServerPlayer player in
+                 serverApi.World.AllOnlinePlayers)
         {
             string uid = player.PlayerUID;
 
@@ -97,13 +115,16 @@ public class LongLifeMod : ModSystem
                 survivalDays[uid] = 0.0;
             }
 
-            if (!lastWorldTimes.TryGetValue(uid, out double lastWorldTime))
+            if (!lastWorldTimes.TryGetValue(
+                    uid,
+                    out double lastWorldTime))
             {
                 lastWorldTimes[uid] = currentWorldTime;
                 continue;
             }
 
-            double elapsed = currentWorldTime - lastWorldTime;
+            double elapsed =
+                currentWorldTime - lastWorldTime;
 
             // Only count forward movement of the game clock.
             if (elapsed > 0)
@@ -116,17 +137,22 @@ public class LongLifeMod : ModSystem
                 UpdateLongLifeStats(player);
 
                 // Temporary diagnostic.
-                int currentDay = (int)Math.Floor(survivalDays[uid]);
+                int currentDay =
+                    (int)Math.Floor(survivalDays[uid]);
 
                 if (
                     currentDay > 0 &&
-                    currentDay != lastLoggedDays.GetValueOrDefault(uid)
+                    currentDay !=
+                    lastLoggedDays.GetValueOrDefault(uid)
                 )
                 {
                     lastLoggedDays[uid] = currentDay;
 
                     EntityFloatStats? healthStat =
-                        GetStat(player, "maxhealthExtraPoints");
+                        GetStat(
+                            player,
+                            "maxhealthExtraPoints"
+                        );
 
                     if (healthStat != null)
                     {
@@ -139,7 +165,8 @@ public class LongLifeMod : ModSystem
                     else
                     {
                         Mod.Logger.Warning(
-                            "LongLife: Could not find maxhealthExtraPoints."
+                            "LongLife: Could not find " +
+                            "maxhealthExtraPoints."
                         );
                     }
                 }
@@ -158,23 +185,64 @@ public class LongLifeMod : ModSystem
             return;
         }
 
-        // 1% per in-game day, capped at 60%.
+        // 1 point of bonus per in-game day, capped at 60.
         //
-        // 0 days  -> 0.00
-        // 1 day   -> 0.01
-        // 30 days -> 0.30
-        // 60 days -> 0.60
-        float bonus = (float)(Math.Min(days, 60.0) / 100.0);
+        // 0 days  -> 0
+        // 1 day   -> 1
+        // 30 days -> 30
+        // 60 days -> 60
+        float bonus =
+            (float)Math.Min(days, 60.0);
 
-        foreach (string statName in LongLifeStats)
+        // Health should gain at most 9 extra HP.
+        //
+        // 0 days  -> 0 HP
+        // 30 days -> 4.5 HP
+        // 60 days -> 9 HP
+        float healthBonus =
+            bonus * (9f / 60f);
+
+        EntityFloatStats? healthStat =
+            GetStat(
+                player,
+                "maxhealthExtraPoints"
+            );
+
+        if (healthStat != null)
         {
-            EntityFloatStats? stat = GetStat(player, statName);
+            healthStat.Set(
+                LongLifeModifier,
+                healthBonus
+            );
+        }
+
+        // Other stats.
+        //
+        // These are NOT percentages.
+        // Adjust these values according to how much you want
+        // each stat to increase per survival day.
+        string[] multiplierStats =
+        {
+            "rangedWeaponsDamage",
+            "meleeWeaponsDamage",
+            "animalLootDropRate",
+            "forageDropRate",
+            "wildCropDropRate",
+            "oreDropRate",
+            "miningSpeedMul"
+        };
+
+        foreach (string statName in multiplierStats)
+        {
+            EntityFloatStats? stat =
+                GetStat(player, statName);
 
             if (stat == null)
             {
                 Mod.Logger.Warning(
-                    $"LongLife: Could not find stat '{statName}' " +
-                    $"for player {player.PlayerName}."
+                    $"LongLife: Could not find stat " +
+                    $"'{statName}' for player " +
+                    $"{player.PlayerName}."
                 );
 
                 continue;
