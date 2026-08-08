@@ -216,6 +216,8 @@ public class LongLifeMod : ModSystem
             );
         }
 
+        return;
+
         // Other stats.
         //
         // These are NOT percentages.
