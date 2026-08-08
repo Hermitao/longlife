@@ -26,4 +26,11 @@
   </Content>
 </ItemGroup>
 
+<ItemGroup>
+  <Content Include="assets\**\*" Exclude="assets\**\*~">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+  </Content>
+</ItemGroup>
+
 </Project>

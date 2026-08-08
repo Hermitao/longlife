@@ -52,6 +52,15 @@ public sealed class ValidateJsonTask : FrostingTask<BuildContext>
         {
             return;
         }
+
+        var backupFiles = context.GetFiles($"../{BuildContext.ProjectName}/assets/**/*~");
+        foreach (var file in backupFiles)
+        {
+            throw new Exception(
+                $"Reserved backup filename found in assets: {file.FullPath}{Environment.NewLine}" +
+                "Vintage Story refuses to load asset files whose names contain '~'. Delete this backup file before packaging.");
+        }
+
         var jsonFiles = context.GetFiles($"../{BuildContext.ProjectName}/assets/**/*.json");
         foreach (var file in jsonFiles)
         {

@@ -1,0 +1,106 @@
+{
+  "code": "longlife-necklace",
+  "shape": {
+    "base": "entity/humanoid/seraph/clothing/neck/longlife-necklace"
+  },
+  "textures": {
+    "seraph": {
+      "base": "block/transparent"
+    },
+    "chain": {
+      "base": "entity/humanoid/seraphclothes/neck/chain/gold"
+    },
+    "ruby": {
+      "base": "entity/humanoid/seraphclothes/neck/gem/ruby"
+    },
+    "metal": {
+      "base": "entity/humanoid/seraphclothes/neck/metal/gold"
+    }
+  },
+  "storageFlags": 128,
+  "maxstacksize": 1,
+  "behaviors": [
+    {
+      "name": "Wearable"
+    }
+  ],
+  "attributes": {
+    "clothescategory": "neck",
+    "wearableAttachment": true,
+    "warmth": 0,
+    "displaycaseable": true,
+    "onDisplayTransform": {
+      "translation": {
+        "x": -0.6,
+        "y": -1.2,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -41
+      }
+    }
+  },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ],
+    "clothing": [
+      "*"
+    ]
+  },
+  "renderAlphaTest": 0.25,
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.6,
+      "y": -2.1,
+      "z": -0.7
+    },
+    "rotation": {
+      "x": -21,
+      "y": -180,
+      "z": 25
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 1.4,
+      "z": 0.5
+    },
+    "scale": 0.71
+  },
+  "guiTransform": {
+    "rotation": {
+      "x": 174,
+      "y": -128,
+      "z": 6
+    },
+    "origin": {
+      "x": 0.45,
+      "y": 1.43,
+      "z": 0.54
+    },
+    "scale": 3.5
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": -0.05,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": -90
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 1.5,
+      "z": 0.5
+    },
+    "scale": 3.06
+  }
+}
